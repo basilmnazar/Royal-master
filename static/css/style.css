@@ -516,7 +516,7 @@ button:focus {
   position: relative;
   overflow: hidden;
   width: 100%;
-  min-height: 800px;
+  min-height: 560px;
 }
 
 .overlay {
@@ -1172,6 +1172,90 @@ button:focus {
 }
 
 /*=========== End about_history_area css =============*/
+
+/* /main-image */
+@media (max-width: 768px) {
+  .thumbnails {
+      width: 28%;
+      display: flex;
+      flex-direction: column;
+      height: 250px;
+  }
+}
+
+@media (max-width: 768px) {
+  .thum_gallery_item .thum_gallery_img {
+      position: relative;
+      height: fit-content;
+  }
+}
+
+@media (max-width: 768px) {
+  .thum_gallery_item .thum_gallery_img .hover {
+      position: absolute;
+      left: 0px;
+      top: 0px;
+      background: rgba(0, 0, 0, 0.5);
+      width: 100%;
+      text-align: center;
+      font-size: 24px;
+      height: 90px;
+      color: #fff;
+      -webkit-transition: all 300ms ease;
+      -o-transition: all 300ms ease;
+      transition: all 300ms ease;
+      opacity: 0;
+  }
+}
+
+
+
+
+/* ------------------------------------------------ */
+@media (min-width: 767px) {
+.thumbnails {
+width: 28%;
+height: 420px;
+display: flex;
+flex-direction: column;
+justify-content: flex-start;
+  }
+
+.thum_gallery_item {
+  margin-bottom: 30px;
+}
+
+.thum_gallery_item .thum_gallery_img {
+  position: relative;
+  height: 55%;
+}
+}
+
+
+.thum_gallery_item img {
+  max-width: 100%;
+}
+
+
+
+.thum_gallery_item .thum_gallery_img .hover {
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  background: rgba(0, 0, 0, 0.5);
+  width: 100%;
+  text-align: center;
+  font-size: 24px;
+  height: 95%;
+  color: #fff;
+  -webkit-transition: all 300ms ease;
+  -o-transition: all 300ms ease;
+  transition: all 300ms ease;
+  opacity: 0;
+}
+
+
+/* end-main */
 .gallery_item {
   margin-bottom: 30px;
 }
@@ -1182,6 +1266,8 @@ button:focus {
 
 .gallery_item .gallery_img {
   position: relative;
+  height: 100%;
+    width: 100%;
 }
 
 .gallery_item .gallery_img .hover {
@@ -1189,7 +1275,7 @@ button:focus {
   left: 0px;
   top: 0px;
   background: rgba(0, 0, 0, 0.5);
-  width: 100%;
+  width: 95%;
   text-align: center;
   font-size: 24px;
   height: 100%;
@@ -1215,7 +1301,52 @@ button:focus {
 .gallery_item .gallery_img:hover .hover {
   opacity: 1;
 }
+/* -------------------------main gallery items------------ */
+.main_gallery_item {
+  margin-bottom: 30px;
+}
 
+.main_gallery_item img {
+  max-width: 100%;
+}
+
+.main_gallery_item .main_gallery_img {
+  position: relative;
+  height: 100%;
+}
+
+.main_gallery_item .main_gallery_img .hover {
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  background: rgba(0, 0, 0, 0.5);
+  width: 100%;
+  text-align: center;
+  font-size: 24px;
+  height: 59%;
+  color: #fff;
+  -webkit-transition: all 300ms ease;
+  -o-transition: all 300ms ease;
+  transition: all 300ms ease;
+  opacity: 0;
+}
+
+.main_gallery_item .main_gallery_img .hover i {
+  position: absolute;
+  left: 0px;
+  top: 50%;
+  width: 100%;
+  text-align: center;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+  color: #fff;
+}
+
+.main_gallery_item .main_gallery_img:hover .hover {
+  opacity: 1;
+}
+/*---------------------------------------------------- */
 /*---------------------------------------------------- */
 /*----------------------------------------------------*/
 /*============ testimonial_area css ============*/
@@ -4119,6 +4250,47 @@ img.logo-img {
   border-radius: 3px;
   cursor: pointer;
 }
+
+
+@media (max-width:768px){
+.list_div {
+  padding-left: 5px;
+  color: black;
+  font-family: 'circular';
+  font-weight: 700;
+  width: fit-content;
+  text-align: center;
+
+}
+.list_div li{
+  padding: 4px;
+}
+span {
+  font-size: 16px;
+  color: black;
+  font-weight: 700;
+  padding-left: 5px;
+}
+}
+@media (min-width: 767px){
+  .list_div {
+    padding-left: 60px;
+    color: black;
+    font-family: 'circular';
+    font-weight: 700;
+    width: fit-content;
+  
+  }
+  .list_div li{
+    padding: 4px;
+  }
+  span {
+    font-size: 16px;
+    color: black;
+    font-weight: 700;
+    padding-left: 60px;
+  }
+  }
 @media (max-width:768px){
   /* moblie view  updated on 05/06/2024 */
   .hotel-gallery {
@@ -4633,17 +4805,16 @@ button.view-map {
   .hotel-gallery {
     display: flex;
     flex-direction: row;
-    justify-content: space-evenly;
-    margin-bottom: 20px;
-    height: 450px;
-    gap: 20px;
+    margin-left: 100px;
   }
   
   
   .gallery_item {
     margin-bottom: 30px;
     height: 100%;
-    width: fit-content;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
   }
   
   
@@ -4654,7 +4825,7 @@ button.view-map {
   
   .gallery_img img {
     width: 95%;
-    height: 410px;
+    height: 350px;
   }
   
 
@@ -4785,7 +4956,7 @@ button.view-map {
     font-size: 15px;
     font-weight: bold;
     padding: 5px 5px;
-    background-color: #ffa500e3;
+    background-color: #2873e5e3;
     color: white;
     border: 15px;
     border-radius: 5px;
@@ -4893,6 +5064,7 @@ button.view-map {
     color: black;
     font-size: 26px;
     margin-left: 1px;
+    margin-top: 50px;
   }
   .hotel-name p{
     font-family: system-ui;
