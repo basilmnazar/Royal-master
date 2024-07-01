@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Inquiry Form</title>
+</head>
+<body>
+    <h1>Inquiry Form</h1>
+    <form method="post" action="//">
+        {% csrf_token %}
+        <label for="check_in">Check-in Date:</label>
+        <input type="date" id="check_in" name="check_in" required><br><br>
+        <label for="check_out">Check-out Date:</label>
+        <input type="date" id="check_out" name="check_out" required><br><br>
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required><br><br>
+        <label for="contact_number">Contact Number:</label>
+        <input type="text" id="contact_number" name="contact_number" required><br><br>
+        <label for="num_people">Number of People:</label>
+        <input type="number" id="num_people" name="num_people" required min="1"><br><br>
+        <button type="submit">Submit</button>
+    </form>
+</body>
+</html>

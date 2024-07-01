@@ -6,6 +6,7 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
         <link rel="icon" href="{% static 'image/varkala_logo.png' %}" type="image/png">
+        <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
         <title>Varkal Stays</title>
         <!-- Bootstrap CSS -->
         <link rel="stylesheet" href="{% static 'css/bootstrap.css' %}">
@@ -27,7 +28,7 @@
             <div class="container">
                 <nav class="navbar navbar-expand-lg navbar-light">
                     <!-- Brand and toggle get grouped for better mobile display -->
-                    <a class="navbar-brand logo_h" href="index.html"><img src="{% static 'image/varkala_logo.png' %}" alt="" class="logo-img"></a>
+                    <a class="navbar-brand logo_h" href="{%url 'index'%}"><img src="{% static 'image/varkala_logo.png' %}" alt="" class="logo-img"></a>
                     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
@@ -74,21 +75,21 @@
                 <div class="container-hotel-info">
                     <div class="header">
                         <h1>Ashokam Beach Resort  <span></span></h1>
-                        <p>Cavelossim, Goa | 2 minutes walk to Cavelossim Beach</p>
+                        <p>Beach side Property</p>
                     </div>
                     <br><br>
                     <div class="gallery">
                         <div class="main-image main_gallery_item">
                             <div class="main_gallery_img">
-                                <img src="{% static 'image/property_img/ashokam_detail1.jpeg ' %}" alt="">
+                                <img src="{% static 'image/property_img/ashokam_detail1.jpeg' %}" alt="">
                                 <div class="hover">
                                     <a class="light" href="{% static 'image/property_img/ashokam_detail1.jpeg ' %}"><i class="fa fa-expand"></i></a>
                                 </div>
                             </div>
                         </div>
                         <div class="thumbnails">
-                            <img src="{% static 'image/gallery/01.jpg' %}" alt="Video Thumbnail">
-                            <img src="{% static 'image/gallery/03.jpg' %}" alt="Room">
+                            <img src="{% static 'image/property_img/ashokam5.jpg' %}" alt="Video Thumbnail">
+                            <img src="{% static 'image/property_img/ashokam6.jpg' %}" alt="Room">
                         </div>
                     </div>
                     <div class="hotel-name">
@@ -102,7 +103,7 @@
                             The property provides a variety of Ayurveda packages to heal your body. <br>
                         </p> <br>
 
-                        <span>Room Types</span><br>
+                        <span class="txt_roomtype">Room Types</span><br>
                         <div class="list_div">
                             <li>NON AC sea view Standard Room  --  Room Only  &  Room with Breakfast available</li>
                             <li>AC deluxe double room with garden view  --  Room with Breakfast</li>
@@ -112,14 +113,109 @@
                         </div><br><br>
                         <!-- <span>Property Rules</span><br> -->
                         <div class="list_div">
-                            <h3>Property Rules</h3>
+                            <h2>Property Rules</h2>
                             <p>Check-in: 12 PM Check-out: 11 AM</p>
-                            <li>Guests below 18 years of age are not allowed at the property.</li>
                             <li>Passport, Aadhar, Govt. ID and Driving License are accepted as ID proof(s)</li>
                             <li>Pets are not allowed</li>
                             <li>Outside food is not allowed</li>
                         </div><br><br>
 
+
+                        <h1 class="Location">Room Types</h1>          
+                        <br> 
+                        <br>             
+                        <div class="room_main">
+                        <!--hotel-room 1-->
+
+                            <div class="room_card">
+                                <img src="{% static 'image/property_img/ashokam_hotel_room1.jpg' %}" alt="Swimming pool" class="room_card-image">
+                                <div class="room_card-content">
+                                    <h2>Garden View AC - Deluxe Double Room</h2>
+                                    <ul class="room_details">
+                                        <li><img src="{% static 'image/property_img/bed-alt.png' %}" alt="" style="height: 20px; width: 20px;"> Double Bed</li>
+                                        <li><img src="{% static 'image/property_img/trillium.png' %}" alt="" style="height: 20px; width: 20px;"> Garden View  </li>
+                                        <li><img src="{% static 'image/property_img/Desk.png' %}" alt="" style="height: 20px; width: 20px;"> Work Desk </li>
+                                        <li><img src="{% static 'image/property_img/wifi.png' %}" alt="" style="height: 20px; width: 20px;"> Wi-Fi </li>
+                                        <li><img src="{% static 'image/property_img/water-bottle.png' %}" alt="" style="height: 20px; width: 20px;">Complimentar water bottle </li>
+                                        <!-- <li><img src="{% static 'image/icon_png/ban.png' %}" alt="" style="height: 20px; width: 20px;"> Non-Refundable</li> -->
+                                    </ul>
+                                </div>
+                            </div> 
+                            
+                        <!--hotel-room-2-->
+
+                            <div class="room_card">
+                                <img src="{% static 'image/property_img/Sea View AC - Deluxe Room With Balcony.jpg' %}" alt="Swimming pool" class="room_card-image">
+                                <div class="room_card-content">
+                                    <h2>Sea View AC - Deluxe Room With Balcony</h2>
+                                    <ul class="room_details">
+                                        <li><img src="{% static 'image/property_img/bed-alt.png' %}" alt="" style="height: 20px; width: 20px;">  Twin Bed </li>
+                                        <li><img src="{% static 'image/property_img/wave.png' %}" alt="" style="height: 20px; width: 20px;"> Sea View </li>
+                                        <li><img src="{% static 'image/property_img/Desk.png' %}" alt="" style="height: 20px; width: 20px;"> Work Desk </li>
+                                        <li><img src="{% static 'image/property_img/wifi.png' %}" alt="" style="height: 20px; width: 20px;"> Wi-Fi </li>
+                                        <li><img src="{% static 'image/property_img/water-bottle.png' %}" alt="" style="height: 20px; width: 20px;"> Complimentar water bottle </li>
+                                    </ul>
+                                </div>
+                            </div> 
+                        <!--hotel-room 3-->
+                            
+                            <div class="room_card">
+                                <img src="{% static 'image/property_img/Premium AC deluxe double room with balcony.jpg' %}" alt="Swimming pool" class="room_card-image">
+                                <div class="room_card-content">
+                                    <h2>Premium Sea View AC - Deluxe Room With Balcony</h2>
+                                    <ul class="room_details">
+                                        <li><img src="{% static 'image/property_img/bed-alt.png' %}" alt="" style="height: 20px; width: 20px;"> Double Bed </li>
+                                        <li><img src="{% static 'image/property_img/wave.png' %}" alt="" style="height: 20px; width: 20px;"> Sea View </li>
+                                        <li><img src="{% static 'image/property_img/Desk.png' %}" alt="" style="height: 20px; width: 20px;"> Work Desk </li>
+                                        <li><img src="{% static 'image/property_img/wifi.png' %}" alt="" style="height: 20px; width: 20px;"> Wi-Fi </li>
+                                        <li><img src="{% static 'image/property_img/water-bottle.png' %}" alt="" style="height: 20px; width: 20px;"> Complimentar water bottle </li>
+                                    </ul>
+                                </div>
+                            </div> 
+                            <!--hotel-room 4-->
+                        
+                            <div class="room_card">
+                                <img src="{% static 'image/property_img/AC sea view family room with balcony.jpg' %}" alt="Swimming pool" class="room_card-image">
+                                <div class="room_card-content">
+                                    <h2>Sea View Family Room AC - With Balcony</h2>
+                                    <ul class="room_details">
+                                        <li><img src="{% static 'image/property_img/bed-alt.png' %}" alt="" style="height: 20px; width: 20px;"> Double Bed </li>
+                                        <li><img src="{% static 'image/property_img/wave.png' %}" alt="" style="height: 20px; width: 20px;"> Sea View </li>
+                                        <li><img src="{% static 'image/property_img/Desk.png' %}" alt="" style="height: 20px; width: 20px;"> Work Desk </li>
+                                        <li><img src="{% static 'image/property_img/wifi.png' %}" alt="" style="height: 20px; width: 20px;"> Wi-Fi </li>
+                                        <li><img src="{% static 'image/property_img/water-bottle.png' %}" alt="" style="height: 20px; width: 20px;"> Complimentar water bottle </li>
+                                    </ul>
+                                </div>
+                            </div> 
+                        <!--hotel-room 5-->
+                            <div class="room_card">
+                                <img src="{% static 'image/property_img/Premium AC sea view family room with balcony.jpg' %}" alt="Swimming pool" class="room_card-image">
+                                <div class="room_card-content">
+                                    <h2>Premium Sea View Family Room AC - With Balcony</h2>
+                                    <ul class="room_details">
+                                        <li><img src="{% static 'image/property_img/bed-alt.png' %}" alt="" style="height: 20px; width: 20px;">1 King bed or 2 Twin Bed(s) </li>
+                                        <li><img src="{% static 'image/property_img/wave.png' %}" alt="" style="height: 20px; width: 20px;"> Sea View </li>
+                                        <li><img src="{% static 'image/property_img/Desk.png' %}" alt="" style="height: 20px; width: 20px;"> Work Desk </li>
+                                        <li><img src="{% static 'image/property_img/wifi.png' %}" alt="" style="height: 20px; width: 20px;"> Wi-Fi </li>
+                                        <li><img src="{% static 'image/property_img/water-bottle.png' %}" alt="" style="height: 20px; width: 20px;"> Complimentar water bottle </li>
+                                    </ul>
+                                </div>
+                            </div> 
+                        <!--hotel-room 6-->
+                        <div class="room_card">
+                            <img src="{% static 'image/property_img/Standard Non AC Room.jpg' %}" alt="Swimming pool" class="room_card-image">
+                            <div class="room_card-content">
+                                <h2>Standard Non AC Room</h2>
+                                <ul class="room_details">
+                                    <li><img src="{% static 'image/property_img/bed-alt.png' %}" alt="" style="height: 20px; width: 20px;">  Double Bed </li>
+                                    <li><img src="{% static 'image/property_img/wave.png' %}" alt="" style="height: 20px; width: 20px;"> Sea View </li>
+                                    <li><img src="{% static 'image/property_img/Desk.png' %}" alt="" style="height: 20px; width: 20px;"> Work Desk </li>
+                                    <li><img src="{% static 'image/property_img/wifi.png' %}" alt="" style="height: 20px; width: 20px;"> Wi-Fi </li>
+                                    <li><img src="{% static 'image/property_img/water-bottle.png' %}" alt="" style="height: 20px; width: 20px;"> Complimentar water bottle </li>
+                                </ul>
+                            </div>
+                        </div> 
+                        </div>
 
                         <h1 class="Location">Hotel-images</h1>
                         <div class="hotel-gallery" id="gallery">

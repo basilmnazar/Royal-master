@@ -7,17 +7,9 @@ urlpatterns =[
     path('gallery/',varkala_gallery,name='gallery'),
     path('property_list/',varkala_list,name='property_list'),
     path('contact/',varkala_contact,name='contact'),
+    path('enquiry/',send_enquiry_email,name='enquiry'),
+    path('enquirysuccess/',enquirysuccess,name='enquirysuccess'),
 
-    #modifiy on 23/05/2024 -- chandru 
-    # path('ashokam/',ashokam_details,name='ashokam_details'),
-
-    # modifiy on 21/05/2024 -- chandru 
-
-    # path('accomodation/',varkala_accomodation,name='accomodation'),
-    # path('blog-single/',varkala_blog_single,name='blog-single'),
-    
-    
-    # modifiy on 21/05/2024 -- chandru 
     path('ashokam/',ashokam_details,name='ashokam_details'),
     path('cliffcounty/',cliffcounty_details,name='cliffcounty_details'),
     path('evebeach/',eva_beach_details,name='evebeach_details'),
@@ -26,5 +18,13 @@ urlpatterns =[
     path('nisara/',nisara_details,name='nisara_details'),
     path('moon_waves/',moon_waves_details,name='moon_waves_details'),
     path('villa_skyframe/',villa_skyframe_details,name='villa_skyframe_details'),
-
+    
+    
+    # voucher creations urls
+    
+    path('voucher_create_index/', voucher_create_index, name='voucher_create_index'),
+    path('create_customer_voucher/', create_customer_voucher, name='create_customer_voucher'),
+    path('create_hotel_voucher/', create_hotel_voucher, name='create_hotel_voucher'),
+    path('success/', voucher_success, name='voucher_success'),
+    path('download/<str:voucher_type>/', download_voucher, name='download_voucher'),
 ]

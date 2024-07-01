@@ -879,7 +879,7 @@ button:focus {
 }
 
 .blog_banner_haiwa .bg-parallax{
-  background: url(../image/property_img/haiwa_hudels.jpg) no-repeat scroll center bottom/cover;
+  background: url(../image/property_img/haiwa_room_2.jpeg) no-repeat scroll center bottom/cover;
 }
 /* end-haiwa */
 
@@ -890,7 +890,7 @@ button:focus {
   overflow: hidden;
 }
 
-
+ana
 .blog_banner_skyframe .banner_content {
   margin-bottom: 0px;
   margin-top: 106px;
@@ -1275,7 +1275,7 @@ justify-content: flex-start;
   left: 0px;
   top: 0px;
   background: rgba(0, 0, 0, 0.5);
-  width: 95%;
+  width: 100%;
   text-align: center;
   font-size: 24px;
   height: 100%;
@@ -1301,6 +1301,69 @@ justify-content: flex-start;
 .gallery_item .gallery_img:hover .hover {
   opacity: 1;
 }
+
+/* ---gallery-new style */
+/* --------------------gallery_page  start ------------------------------ */
+@media (max-width:768px){
+  div#gallery_page{
+  position: relative !important;
+  height: auto  !important;
+  }
+}
+
+@media (min-width:767px){
+  div#gallery_page{
+    position: relative !important;
+    height: 975px  !important;
+  }
+}
+
+.gallery_page_item {
+  margin-bottom: 30px;
+}
+
+.gallery_page_item img {
+  max-width: 100%;
+}
+
+.gallery_page_item .gallery_page_img {
+  position: relative;
+}
+
+.gallery_page_item .gallery_page_img .hover {
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  background: rgba(0, 0, 0, 0.5);
+  width: 100%;
+  text-align: center;
+  font-size: 24px;
+  height: 100%;
+  color: #fff;
+  -webkit-transition: all 300ms ease;
+  -o-transition: all 300ms ease;
+  transition: all 300ms ease;
+  opacity: 0;
+}
+
+.gallery_page_item .gallery_page_img .hover i {
+  position: absolute;
+  left: 0px;
+  top: 50%;
+  width: 100%;
+  text-align: center;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+  color: #fff;
+}
+
+.gallery_page_item .gallery_page_img:hover .hover {
+  opacity: 1;
+}
+
+/*----------------------gallery_page end ------------------------------ */
+/* end-gallery  */
 /* -------------------------main gallery items------------ */
 .main_gallery_item {
   margin-bottom: 30px;
@@ -4108,11 +4171,15 @@ body {
 }
 
 .hotel-details .amenities span {
+  font-family: system-ui;
+  font-weight: bold;
+  color: black;
+  margin-left: 5px;
+  margin-top: 5px;
   display: inline-block;
   background-color: #eee;
   padding: 5px;
   margin-right: 5px;
-  margin-top: 5px;
   border-radius: 3px;
   font-size: 12px;
 }
@@ -4222,13 +4289,7 @@ img.logo-img {
   border-style: none;
   height: 80px;
 }
-.details_info{
-  display: flex;
-  justify-content: space-between;
-  gap: 16px;
-  padding-top: 5px;
 
-}
 /* .call_now_btn{
   background-color: #4496f5d9;
   border: none;
@@ -4260,39 +4321,46 @@ img.logo-img {
   font-weight: 700;
   width: fit-content;
   text-align: center;
-
 }
 .list_div li{
   padding: 4px;
 }
-span {
+/* span {
   font-size: 16px;
   color: black;
   font-weight: 700;
   padding-left: 5px;
+} */
 }
-}
+
+
 @media (min-width: 767px){
+  .list_div h3 {
+    font-family: system-ui;
+    font-weight: 700;
+    color: black;
+    font-size: 26px;
+    margin-left: 1px;
+    margin-top: 50px;
+  }
   .list_div {
     padding-left: 60px;
     color: black;
-    font-family: 'circular';
-    font-weight: 700;
-    width: fit-content;
-  
+    font-size: 15px;
+    font-family: system-ui;
+    font-weight: 400;
   }
   .list_div li{
     padding: 4px;
   }
-  span {
-    font-size: 16px;
-    color: black;
-    font-weight: 700;
-    padding-left: 60px;
+  h4.txt_cnct {
+    padding: 7px 14px;
+    display: none;
   }
   }
+
+
 @media (max-width:768px){
-  /* moblie view  updated on 05/06/2024 */
   .hotel-gallery {
     display: flex;
     flex-direction: column;
@@ -4302,13 +4370,15 @@ span {
     gap: 20px;
   }
   
-  
   .gallery_item {
     margin-bottom: 30px;
     height: 100%;
     width: fit-content;
   }
-  
+  h4.txt_cnct {
+    padding: 7px 14px;
+    color: black;
+}
   
   .gallery_img.hotel_image {
     width: fit-content;
@@ -4452,6 +4522,13 @@ span {
     border-radius: 5px;
     cursor: pointer;
     }
+    .details_info {
+      display: flex;
+      justify-content: space-between;
+      gap: 16px;
+      padding-top: 5px;
+      flex-direction: column;
+  }
   .hotel-card {
     background-color: white;
     border: 1px solid #ddd;
@@ -4483,6 +4560,22 @@ span {
     font-family: system-ui;
     font-weight: bold;
   }
+  .share-buttons {
+    display: flex;
+    gap: 10px;
+}
+.share-buttons a {
+  text-decoration: none;
+  padding: 5px 5px;
+  color: white;
+  border-radius: 5px;
+  width: fit-content;
+  height: 35px;
+  font-size: 10px;
+  display: flex;
+}
+.facebook { background-color: #3b5998; }
+.whatsapp { background-color: #25d366; }
   .style-rating-score {
     font-size: 15px;
     font-weight: bold;
@@ -4604,6 +4697,14 @@ span {
     margin-bottom: 10px;
     border-radius: 10px;
     height: 35%;
+  }
+  span.txt_roomtype {
+    font-size: 25px;
+    margin-top: 20px;
+    color: black;
+    font-weight: 600;
+    display: flex;
+    justify-content: center;
   }
 }
 
@@ -4985,6 +5086,31 @@ button.view-map {
     height: 280px;
     cursor: pointer;
   }
+  .details_info{
+    display: flex;
+    justify-content: space-between;
+    gap: 16px;
+    padding-top: 5px;
+  
+  }
+  .share-buttons {
+    display: flex;
+    gap: 10px;
+    padding-right: 260px;
+}
+.share-buttons a {
+    text-decoration: none;
+    padding: 5px 12px;
+    color: white;
+    border-radius: 5px;
+    width: 114px;
+    height: 35px;
+    font-size: 10px;
+    display: flex;
+}
+
+.facebook { background-color: #3b5998; }
+.whatsapp { background-color: #25d366; }
   .hotel-hover {
     transition: box-shadow 0.3s ease-in-out;
   }
@@ -5147,11 +5273,12 @@ button.view-map {
   }
 
   h1.Location {
-    margin-left: 60px;
-    color: black;
-    font-family: system-ui;
-    font-weight: 500;
-    font-size: 30px;
+   margin-top: 50px;
+   color: black;
+   font-family: system-ui;
+   font-size: 26px;
+   margin-left: 60px;
+   font-weight: 700;
   }
 
   .non-refundable {
@@ -5169,7 +5296,15 @@ button.view-map {
       border-radius: 9px;
       /* object-fit: cover; */
   }
+  span.txt_roomtype {
+    font-size: 20px;
+    margin-top: 50px;
+    color: black;
+    margin-left: 60px;
+    font-weight: 600;
+  }
 }
+
 
 
 
@@ -5254,3 +5389,115 @@ button.view-map {
 /* updated on */
 
 
+/*-------------------room--details--start --------------------- */
+
+@media (min-width:767px) { 
+  .room_card {
+    display: flex;
+    border: 1px solid #ddd;
+    background-color: #fff;
+    border-radius: 8px;
+    overflow: hidden;
+    width: 75%;
+    height: 300px;
+    /* max-width: 800px; */
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    flex-direction: row;
+    margin-bottom: 10px;
+    margin-left: 250px;
+    margin-right: 250px;
+  }
+
+  .room_card-image {
+      width: 75%;
+      object-fit: cover;
+  }
+  .room_main{
+      margin-bottom: 10px;
+  }
+  .room_card-content {
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 60%;
+  }
+  .room_card-content h2 {
+    margin: 0 0 10px;
+    font-size: 20px;
+    color: black;
+    font-weight: 600;
+  }
+
+  ul.room_details {
+    list-style-type: none;
+    font-size: 15px;
+    font-family: system-ui;
+    font-weight: 500;
+    margin-top: 0px;
+    margin-bottom: 0px;
+  }
+
+  .room_details li {
+    margin-bottom: 17px;
+    color: black;
+  }
+}
+
+
+@media (max-width:768px) {
+  .room_card {
+    display: flex;
+    border: 1px solid #ddd;
+    background-color: #fff;
+    border-radius: 8px;
+    overflow: hidden;
+    width: 100%;
+    max-width: 800px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    flex-direction: row;
+    margin-bottom: 10px;
+  }
+
+
+  .room_card-image {
+    width: 100%;
+    height: 25vh;
+    object-fit: cover;
+  }
+  .room_card {
+    display: flex;
+    border: 1px solid #ddd;
+    background-color: #fff;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    flex-direction: column;
+    margin-bottom: 10px;
+  }
+  .room_card-content h2 {
+    margin: 0 15px 10px;
+    font-size: 20px;
+    color: black;
+  }
+  
+  .room_card-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+  }
+  ul.room_details {
+    font-size: 15px;
+    font-family: system-ui;
+    font-weight: 500;
+    margin-top: 5px;
+    margin-bottom: 10px;
+  }
+  .room_details li {
+    margin-bottom: 10px;
+    color: black;
+  }
+}
+
+/* ------------hotet--details--end----------- */
