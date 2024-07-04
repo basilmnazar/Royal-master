@@ -1047,6 +1047,170 @@ ana
   background: url(../image/property_img/moon_waves_1.jpg) no-repeat scroll center bottom/cover;
 }
 /* end-nisara */
+
+/* -ss_beach_resort */
+.blog_banner_ss_beach_resort {
+  min-height: 780px;
+  overflow: hidden;
+}
+
+
+.blog_banner_ss_beach_resort .banner_content {
+  margin-bottom: 0px;
+  margin-top: 106px;
+}
+
+.blog_banner_ss_beach_resort .banner_content h4 {
+  font-size: 60px;
+  line-height: 66px;
+  font-weight: bold;
+  color: #fff;
+  font-family: "Poppins", sans-serif;
+}
+
+.blog_banner_ss_beach_resort .banner_content p {
+  font-size: 16px;
+  padding: 0px;
+  margin-bottom: 35px;
+}
+
+.f_48 {
+  font-size: 48px;
+  line-height: 60px;
+  font-weight: 700;
+}
+
+.blog_banner_two {
+  padding: 187px 0px 104px;
+}
+
+.blog_banner_ss_beach_resort .bg-parallax{
+  background: url(../image/property_img/ss_beach_resort_main.jpeg) no-repeat scroll center bottom/cover;
+}
+/* end-ss_beach_resort */
+
+/* -zion_beach_resort */
+.blog_banner_zion_beach_resort {
+  min-height: 780px;
+  overflow: hidden;
+}
+
+
+.blog_banner_zion_beach_resort .banner_content {
+  margin-bottom: 0px;
+  margin-top: 106px;
+}
+
+.blog_banner_zion_beach_resort .banner_content h4 {
+  font-size: 60px;
+  line-height: 66px;
+  font-weight: bold;
+  color: #fff;
+  font-family: "Poppins", sans-serif;
+}
+
+.blog_banner_zion_beach_resort .banner_content p {
+  font-size: 16px;
+  padding: 0px;
+  margin-bottom: 35px;
+}
+
+.f_48 {
+  font-size: 48px;
+  line-height: 60px;
+  font-weight: 700;
+}
+
+.blog_banner_two {
+  padding: 187px 0px 104px;
+}
+
+.blog_banner_zion_beach_resort .bg-parallax{
+  background: url(../image/property_img/zion_villa_main.jpg) no-repeat scroll center bottom/cover;
+}
+/* end-zion_beach_resort */
+
+/* -gone_costal_hmsay */
+.blog_banner_gone_costal {
+  min-height: 780px;
+  overflow: hidden;
+}
+
+
+.blog_banner_gone_costal .banner_content {
+  margin-bottom: 0px;
+  margin-top: 106px;
+}
+
+.blog_banner_gone_costal .banner_content h4 {
+  font-size: 60px;
+  line-height: 66px;
+  font-weight: bold;
+  color: #fff;
+  font-family: "Poppins", sans-serif;
+}
+
+.blog_banner_gone_costal .banner_content p {
+  font-size: 16px;
+  padding: 0px;
+  margin-bottom: 35px;
+}
+
+.f_48 {
+  font-size: 48px;
+  line-height: 60px;
+  font-weight: 700;
+}
+
+.blog_banner_two {
+  padding: 187px 0px 104px;
+}
+
+.blog_banner_gone_costal .bg-parallax{
+  background: url(../image/property_img/gone_costal_main.jpg) no-repeat scroll center bottom/cover;
+}
+/* end-gone_costal */
+
+/* kerala_bamboo */
+.blog_banner_kerala_bamboo {
+  min-height: 780px;
+  overflow: hidden;
+}
+
+
+.blog_banner_kerala_bamboo .banner_content {
+  margin-bottom: 0px;
+  margin-top: 106px;
+}
+
+.blog_banner_kerala_bamboo .banner_content h4 {
+  font-size: 60px;
+  line-height: 66px;
+  font-weight: bold;
+  color: #fff;
+  font-family: "Poppins", sans-serif;
+}
+
+.blog_banner_kerala_bamboo .banner_content p {
+  font-size: 16px;
+  padding: 0px;
+  margin-bottom: 35px;
+}
+
+.f_48 {
+  font-size: 48px;
+  line-height: 60px;
+  font-weight: 700;
+}
+
+.blog_banner_two {
+  padding: 187px 0px 104px;
+}
+
+.blog_banner_kerala_bamboo .bg-parallax{
+  background: url(../image/property_img/kerla_bambo_main.jpg) no-repeat scroll center bottom/cover;
+}
+/* end-kerala_bamboo */
 /*=============End Blog Banner css =============*/
 
 
@@ -4314,14 +4478,15 @@ img.logo-img {
 
 
 @media (max-width:768px){
-.list_div {
-  padding-left: 5px;
-  color: black;
-  font-family: 'circular';
-  font-weight: 700;
-  width: fit-content;
-  text-align: center;
-}
+    .list_div {
+    color: black;
+    font-family: 'circular';
+    font-weight: 700;
+    width: fit-content;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    }
 .list_div li{
   padding: 4px;
 }
@@ -4357,6 +4522,14 @@ img.logo-img {
     padding: 7px 14px;
     display: none;
   }
+  h4.txt_cnct_sngle {
+    padding: 7px 14px;
+    display: none;
+  }
+  h4.txt_cnct_min {
+    padding: 7px 14px;
+    color: white;
+  }
   }
 
 
@@ -4378,6 +4551,15 @@ img.logo-img {
   h4.txt_cnct {
     padding: 7px 14px;
     color: black;
+}
+  h4.txt_cnct_sngle {
+    padding: 7px 14px;
+    color: white;
+}
+h4.txt_cnct_min {
+  padding: 7px 14px;
+  color: white;
+  display: none;
 }
   
   .gallery_img.hotel_image {
@@ -5352,9 +5534,19 @@ button.view-map {
   }
 } */
 
-.footer-row {
-  display: flex;
-  justify-content: center;
+@media (max-width: 768px){
+  .footer-row {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+  }
+}
+
+@media (min-width: 767px) {
+  .footer-row {
+    display: flex;
+    justify-content: center;
+  }
 }
 
 .footer_title {
@@ -5407,6 +5599,20 @@ button.view-map {
     margin-left: 250px;
     margin-right: 250px;
   }
+    .room_card {
+        display: flex;
+        border: 1px solid #ddd;
+        background-color: #fff;
+        border-radius: 8px;
+        overflow: hidden;
+        width: 75%;
+        height: 300px;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+        flex-direction: row;
+        margin-bottom: 10px;
+        margin-left: auto;
+        margin-right: auto;
+    }
 
   .room_card-image {
       width: 75%;
@@ -5442,6 +5648,13 @@ button.view-map {
     margin-bottom: 17px;
     color: black;
   }
+  .lsted_prpties{
+    color: black;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin-bottom: 20px;
+  }
 }
 
 
@@ -5458,7 +5671,6 @@ button.view-map {
     flex-direction: row;
     margin-bottom: 10px;
   }
-
 
   .room_card-image {
     width: 100%;
@@ -5498,6 +5710,29 @@ button.view-map {
     margin-bottom: 10px;
     color: black;
   }
+  .lsted_prpties{
+    color: black;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  .txt_our_prptes{
+    font-size: 25px;
+  }
 }
 
+.bottom_line {
+  width: 100%;
+  background-color: lightblue;
+  height: 25px;
+  margin-bottom: 15px;
+  display: flex;
+}
+
+
+
+
+
+/* ------------hotet--details--end----------- */
 /* ------------hotet--details--end----------- */

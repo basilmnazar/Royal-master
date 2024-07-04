@@ -55,7 +55,7 @@ def send_enquiry_email(request):
                     f'Check-in date: {check_in}\nCheck-out date: {check_out}\n'
                     f'Name: {name}\nContact number: {contact_number}\nNumber of people: {num_people}',
                     None,  
-                    ['sales@hudels.com'],
+                    ['varkalastays@gmail.com'],
                     fail_silently=False,
                 )
                 print("Email sent successfully")
@@ -108,6 +108,22 @@ def cliffcounty_details(request):
     return render(request, "cliffcounty_details.html")
 
 
+def ss_beach_resort_details(request):
+    return render(request, "ss_beach_resort.html")
+
+
+def zion_villa_resort_details(request):
+    return render(request, "zion_villa_resort.html")
+
+
+def gone_costal_details(request):
+    return render(request, "gone_costal.html")
+
+
+def kerala_bamboo_details(request):
+    return render(request, "kerala_bamboo.html")
+
+
 
 # voucher cretions views 
 
@@ -146,6 +162,8 @@ def create_customer_voucher(request):
             'balance_payable': request.POST.get('balance_payable'),
             'check_in_time': request.POST.get('check_in_time'),
             'check_out_time': request.POST.get('check_out_time'),
+            'check_in_date': request.POST.get('check_in_date'),
+            'check_out_date': request.POST.get('check_out_date'),
             'remarks': request.POST.get('remarks'),
         }
 
@@ -171,7 +189,7 @@ def create_hotel_voucher(request):
             'number_of_rooms': request.POST.get('number_of_rooms'),
             'adults': request.POST.get('adults'),
             'children': request.POST.get('children'),
-            'hotel_contact_number': request.POST.get('hotel_contact_number'),
+            'customer_contact_number': request.POST.get('customer_contact_number'),
             'meal_plan': request.POST.get('meal_plan'),
             'arrival_details': request.POST.get('arrival_details'),
             'total_booking_amount': request.POST.get('total_booking_amount'),
@@ -287,7 +305,7 @@ def create_customer_voucher_pdf(response, voucher_data):
             ["NUMBER OF ROOMS", voucher_data.get('number_of_rooms')],
             ["ADULTS", voucher_data.get('adults')],
             ["CHILDREN", voucher_data.get('children')],
-            ["HOTEL CONTACT NUMBER", voucher_data.get('hotel_contact_number')],
+            ["CUSTOMER CONTACT NUMBER", voucher_data.get('customer_contact_number')],
             ["MEAL PLAN", voucher_data.get('meal_plan')],
             ["ARRIVAL DETAILS", voucher_data.get('arrival_details')],
             ["TOTAL BOOKING AMOUNT", voucher_data.get('total_booking_amount')],
@@ -502,8 +520,6 @@ def create_hotel_voucher_pdf(response, voucher_data):
         p.drawString(text_x, text_y, line)
         text_y -= 15
         
-    
-
     
     
     p.showPage()
