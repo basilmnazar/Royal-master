@@ -4488,13 +4488,13 @@ img.logo-img {
     padding-top: 10px;
     padding-right: 15px;
     padding-bottom: 20px;
-    padding-left: 25px;
+    /* padding-left: 25px; */
 }
   }
   
   /* created a head_div and designed */
   .head_div{
-    margin:left;
+    margin-top: 5px;
     background-color:#fff;
     width:302px;
     height: 59px;
@@ -4508,7 +4508,7 @@ img.logo-img {
   }
   
     .list_div {
-    color: black;
+    color: rgb(0, 0, 0);
     font-family: 'circular';
     font-weight: 600;
     width: fit-content;
@@ -4522,7 +4522,7 @@ img.logo-img {
   font-family: sans-serif;
   text-transform: capitalize;
   font-size: 14px;
-  opacity: .5;
+  opacity: .8;
   line-height: 1.4;
   
     }
@@ -4563,7 +4563,7 @@ img.logo-img {
   font-family: sans-serif;
   text-transform: capitalize;
   font-size: 14px;
-  opacity: .5;
+  opacity: .9;
   
   }
   .list_div p{
@@ -4596,7 +4596,7 @@ img.logo-img {
     padding-top: 10px;
     padding-right: 15px;
     padding-bottom: 20px;
-    padding-left: 25px;
+    /* padding-left: 25px; */
 }
   }
 
@@ -4950,12 +4950,14 @@ h4.txt_cnct_min {
   }
   span.txt_roomtype {
     font-size: 25px;
-    margin-top: 20px;
+    margin-top: 17px;
     color: black;
     font-weight: 600;
     display: flex;
     justify-content:left;
     font-family: sans-serif;
+    position: absolute;
+    
   }
 }
 
@@ -5548,12 +5550,14 @@ button.view-map {
       border-radius: 9px;
       /* object-fit: cover; */
   }
+  /* position absolute added and change heading position */
   span.txt_roomtype {
     font-size: 25px;
-    margin-top: 50px;
+    margin-top:28px;
     color: black;
     margin-left: 60px;
     font-weight: 600;
+    position: absolute;
   }
 }
 
